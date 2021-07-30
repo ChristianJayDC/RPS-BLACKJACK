@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282d3a;
+}
+
+header {
+    background: rgb(224, 224, 224);
+}
+
+
+header > h1 {
+    color: #24272e;
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-size: 25px;
+    font-weight: bold;   
+    padding: 5px;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: Asap, sans-serif;
+    position: relative;
+}
+
+.badge {
+    background: #E2584D;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Asap, sans-serif;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap, sans-serif;
+}
+
+.choices {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choice {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: rgb(202, 202, 7);
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 28px;
+    margin-bottom: 70px;
+}
+
+.green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+/* blackJack */
+
+.container-5 {
+    margin: 0 auto;
+
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    /* border: 3px solid white; */
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.flex-blackjack-row-1 div{
+    background: url('https://imgur.com/0evoM8d.png') center;
+    /* background-color: darkgreen; */
+    color: #fff;
+    border-radius: 6px;
+}
+
+.flex-blackjack-row-1 div {
+    border: 3px solid white;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 410px;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex-blackjack-row-2 button{
+    width: 70px;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 div{
+    padding: 20px;
+}
+
+.flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid #333; */
+    align-items: center;
+}
+
+table, th, td {
+    padding: 10px;
+    border: 3px solid yellow;
+}
+
+#blackjack-result {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap, sans-serif;
+}
+
+@media (max-width: 1320px) {
+    .flex-blackjack-row-1 img {
+        width: 120px;
+        height: 160px;
+        padding: 10px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 390px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .flex-blackjack-row-1 img {
+        width: 110px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 370px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1017px) {
+    .flex-blackjack-row-1 img {
+        width: 100px;
+        height: 140px;
+        padding: 10px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 350px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 710px) {
+    .flex-blackjack-row-1 img {
+        width: 90px;
+        height: 120px;
+        padding: 10px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 310px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 650px) {
+    .flex-blackjack-row-1 img {
+        width: 80px;
+        height: 110px;
+        padding: 10px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 300px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .flex-blackjack-row-1 div {
+        height: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .flex-blackjack-row-1 img {
+        width: 75px;
+        height: 105px;
+        padding: 10px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 380px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .flex-blackjack-row-1 img {
+        width: 65px;
+        height: 95px;
+        padding: 5px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 360px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 360px) {
+    .flex-blackjack-row-1 img {
+        width: 60px;
+        height: 90px;
+        padding: 5px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 340px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 345px) {
+    .flex-blackjack-row-1 img {
+        width: 55px;
+        height: 85px;
+        padding: 5px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 320px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 318px) {
+    .flex-blackjack-row-1 img {
+        width: 50px;
+        height: 80px;
+        padding: 5px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 310px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 310px) {
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .flex-blackjack-row-1 img {
+        width: 47px;
+        height: 75px;
+        padding: 5px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 300px;
+    }
+
+    .flex-blackjack-row-1 h2, span {
+        font-size: 15px;
+    }
+}
+
+/* @media (max-width: 286px) {
+
+    .flex-blackjack-row-1 img {
+        width: 45px;
+        height: 75px;
+        padding: 3px;
+    }
+
+    .flex-blackjack-row-1 div {
+        height: 300px;
+    }
+
+    .flex-blackjack-row-1 h2 {
+        font-size: 20px;
+    }
+} */
